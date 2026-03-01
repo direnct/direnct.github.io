@@ -1,3 +1,181 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direnct Tekin | Portfolio</title>
+    <meta name="description" content="Portfolio of Direnct Tekin - A modern, high-performance web developer showcasing premium designs and technical excellence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">DT<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal">Crafting Digital <span class="gradient-text">Experiences</span></h1>
+                    <p class="reveal delay-1">I am Direnct Tekin, a developer dedicated to building high-performance, visually stunning web applications that push the boundaries of design and logic.</p>
+                    <div class="hero-actions reveal delay-2">
+                        <a href="#projects" class="btn-primary">View Projects</a>
+                        <a href="#about" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Discovery</span>
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Passionate about the intersection of aesthetics and functionality. With a background in web development and a keen eye for modern design, I create web experiences that are not only fast but also leave a lasting impression.</p>
+                        <p>Currently focusing on advanced agentic coding and building premium, state-of-the-art interfaces.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Portfolio</span>
+                    <h2>Featured Projects</h2>
+                </div>
+                <div class="project-grid">
+                    <!-- Project placeholders to be populated -->
+                    <div class="project-card reveal">
+                        <div class="project-image">
+                            <!-- Placeholder for project image -->
+                             <div class="img-fallback">Voice Diary App</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Voice Diary</h3>
+                            <p>A native Android application with real-time audio visualization and calendar integration.</p>
+                            <div class="project-tags">
+                                <span>Kotlin</span>
+                                <span>Android</span>
+                                <span>Jetpack Compose</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal delay-1">
+                        <div class="project-image">
+                             <div class="img-fallback">E-Commerce Design</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Nexus Shop</h3>
+                            <p>A high-performance e-commerce platform with a focus on speed and user experience.</p>
+                            <div class="project-tags">
+                                <span>Next.js</span>
+                                <span>Stripe</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Expertise</span>
+                    <h2>Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i data-lucide="code-2"></i>
+                        <h3>Frontend</h3>
+                        <p>React, Next.js, TypeScript, Modern CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <i data-lucide="server"></i>
+                        <h3>Backend</h3>
+                        <p>Node.js, Python, PostgreSQL, REST APIs</p>
+                    </div>
+                    <div class="skill-item">
+                        <i data-lucide="palette"></i>
+                        <h3>Design</h3>
+                        <p>UI/UX Design, Figma, Animations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="section-header">
+                        <span class="subtitle">Connect</span>
+                        <h2>Let's Build Something Together</h2>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Direnct Tekin. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="github"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
