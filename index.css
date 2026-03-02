@@ -292,8 +292,9 @@ nav ul li a:hover {
 /* Project Grid */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    width: 100%;
 }
 
 .project-card-link {
@@ -494,6 +495,10 @@ footer {
     .hero h1 {
         font-size: 4rem;
     }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -503,6 +508,10 @@ footer {
 
     .hero h1 {
         font-size: 3rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 
     .contact-box {
