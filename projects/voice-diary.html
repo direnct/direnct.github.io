@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Diary | Direnç Tekin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .project-hero {
+            padding: 10rem 0 5rem;
+            background: var(--gradient-1);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .project-details {
+            padding: 5rem 0;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            color: var(--text-muted);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar scrolled">
+        <div class="container">
+            <a href="../index.html" class="logo">DT<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact" class="btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <a href="../index.html#projects" class="back-link"><i data-lucide="arrow-left"></i> Back to Projects</a>
+                <h1 class="gradient-text">Voice Diary App</h1>
+                <p class="hero-subtitle">A native Android application with real-time audio visualization.</p>
+                <div class="project-meta">
+                    <span><strong>Role:</strong> Lead Developer</span>
+                    <span><strong>Platform:</strong> Android</span>
+                    <span><strong>Year:</strong> 2026</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>Overview</h2>
+                        <p>Voice Diary is a personal journaling application that focuses on the power of the human
+                            voice. It allows users to capture their thoughts and emotions through high-quality audio
+                            recordings, which are then organized in an intuitive calendar-based interface.</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Real-time sound-reactive audio visualization.</li>
+                            <li>Interactive calendar view for easy navigation of entries.</li>
+                            <li>High-fidelity audio recording and playback.</li>
+                            <li>Themed UI with glassmorphism elements.</li>
+                        </ul>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Technologies</h3>
+                        <div class="project-tags" style="margin-top: 1rem; justify-content: center;">
+                            <span>Kotlin</span>
+                            <span>Android SDK</span>
+                            <span>Jetpack Compose</span>
+                            <span>MediaRecorder API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Direnç Tekin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

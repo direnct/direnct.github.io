@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Shop | Direnç Tekin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .project-hero {
+            padding: 10rem 0 5rem;
+            background: var(--gradient-1);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .project-details {
+            padding: 5rem 0;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            color: var(--text-muted);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar scrolled">
+        <div class="container">
+            <a href="../index.html" class="logo">DT<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact" class="btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <a href="../index.html#projects" class="back-link"><i data-lucide="arrow-left"></i> Back to Projects</a>
+                <h1 class="gradient-text">Nexus Shop</h1>
+                <p class="hero-subtitle">A high-performance e-commerce platform with a focus on speed and UX.</p>
+                <div class="project-meta">
+                    <span><strong>Role:</strong> Full Stack Developer</span>
+                    <span><strong>Stack:</strong> Next.js, Stripe, Node.js</span>
+                    <span><strong>Year:</strong> 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>Overview</h2>
+                        <p>Nexus Shop is a modern e-commerce solution designed for ultra-fast performance and a seamless
+                            shopping experience. It features server-side rendering for SEO optimization and a headless
+                            architecture for maximum flexibility.</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Headless CMS integration for content management.</li>
+                            <li>Secure payment processing with Stripe.</li>
+                            <li>Dynamic product filtering and search.</li>
+                            <li>Optimized image loading and caching strategies.</li>
+                        </ul>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Technologies</h3>
+                        <div class="project-tags" style="margin-top: 1rem; justify-content: center;">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Stripe API</span>
+                            <span>Tailwind CSS</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Direnç Tekin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

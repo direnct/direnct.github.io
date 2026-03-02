@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Protocol | Direnç Tekin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .project-hero {
+            padding: 10rem 0 5rem;
+            background: var(--gradient-1);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .project-details {
+            padding: 5rem 0;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            color: var(--text-muted);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar scrolled">
+        <div class="container">
+            <a href="../index.html" class="logo">DT<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact" class="btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <a href="../index.html#projects" class="back-link"><i data-lucide="arrow-left"></i> Back to Projects</a>
+                <h1 class="gradient-text">Shadow Protocol</h1>
+                <p class="hero-subtitle">A fast-paced cyber-stealth action game built with Unity.</p>
+                <div class="project-meta">
+                    <span><strong>Role:</strong> Game Designer & Developer</span>
+                    <span><strong>Engine:</strong> Unity 2023</span>
+                    <span><strong>Year:</strong> 2026</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>Overview</h2>
+                        <p>Shadow Protocol is a 3rd person stealth-action game set in a neon-drenched cyberpunk future.
+                            Players take on the role of an elite infiltrator using advanced hacking techniques and agile
+                            movement to navigate through high-security corporate installations.</p>
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Custom Shader Graph for holographic and stealth effects.</li>
+                            <li>Advanced AI behavior trees for guard patrols and detection.</li>
+                            <li>Dynamic lighting system that impacts gameplay (stealth mechanics).</li>
+                            <li>Fluid movement system including wall-running and dashing.</li>
+                        </ul>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Technologies</h3>
+                        <div class="project-tags" style="margin-top: 1rem; justify-content: center;">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Shader Graph</span>
+                            <span>Universal Render Pipeline</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Direnç Tekin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

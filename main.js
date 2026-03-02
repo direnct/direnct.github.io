@@ -28,7 +28,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             targetElement.scrollIntoView({
@@ -48,7 +48,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('DOMContentLoaded', () => {
     scrollReveal();
     handleNavScroll();
-    
+
     // Add active class to hero elements immediately
     document.querySelectorAll('#hero .reveal').forEach(el => {
         el.classList.add('active');
@@ -62,14 +62,14 @@ if (contactForm) {
         e.preventDefault();
         const btn = contactForm.querySelector('button');
         const originalText = btn.textContent;
-        
+
         btn.textContent = 'Message Sent!';
-        btn.style.background = '#d4af37';
-        btn.style.borderColor = '#d4af37';
+        btn.style.background = '#3f9b0b';
+        btn.style.borderColor = '#3f9b0b';
         btn.style.color = '#000';
-        
+
         contactForm.reset();
-        
+
         setTimeout(() => {
             btn.textContent = originalText;
             btn.style.background = '';
