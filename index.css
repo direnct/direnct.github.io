@@ -100,6 +100,25 @@ nav ul li a:hover {
     color: var(--primary);
 }
 
+.nav-socials {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.nav-socials a {
+    color: var(--text-muted);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+}
+
+.nav-socials a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
 /* Buttons */
 .btn-primary {
     background: var(--primary);
@@ -138,7 +157,9 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 80vh;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -168,6 +189,7 @@ nav ul li a:hover {
 .gradient-text {
     background: var(--gradient-text);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -190,7 +212,7 @@ nav ul li a:hover {
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 2rem;
+    bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -230,7 +252,7 @@ nav ul li a:hover {
 
 /* Sections */
 .section-padding {
-    padding: 8rem 0;
+    padding: 6rem 0;
 }
 
 .section-header {
@@ -295,16 +317,19 @@ nav ul li a:hover {
 
 /* Project Grid */
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     width: 100%;
+    align-items: center;
 }
 
 .project-card-link {
     text-decoration: none;
     color: inherit;
     display: block;
+    width: 100%;
+    max-width: 800px;
 }
 
 .project-card {
@@ -406,12 +431,15 @@ nav ul li a:hover {
     padding: 4rem;
     border-radius: 40px;
     border: 1px solid var(--glass-border);
+    text-align: center;
 }
 
 .contact-form {
     display: grid;
     gap: 1.5rem;
     max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .form-group input,
@@ -442,7 +470,7 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -451,19 +479,7 @@ footer {
     font-size: 0.9rem;
 }
 
-.social-links {
-    display: flex;
-    gap: 1.5rem;
-}
 
-.social-links a {
-    color: var(--text-muted);
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    color: var(--primary);
-}
 
 /* Reveal Animations */
 .reveal {
@@ -500,9 +516,7 @@ footer {
         font-size: 4rem;
     }
 
-    .project-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    /* .project-grid rule removed here as it is now flex-column by default */
 }
 
 @media (max-width: 768px) {
