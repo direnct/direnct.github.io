@@ -112,6 +112,12 @@ nav ul li a:hover {
     transition: var(--transition);
     display: flex;
     align-items: center;
+    margin-right: 1.2rem;
+    /* Fallback for Safari */
+}
+
+.nav-socials a:last-child {
+    margin-right: 0;
 }
 
 .nav-socials a:hover {
@@ -157,11 +163,12 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    min-height: 80vh;
-    padding-top: 10rem;
+    min-height: 70vh;
+    padding-top: 8rem;
     padding-bottom: 4rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     overflow: hidden;
 }
