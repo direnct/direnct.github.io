@@ -14,12 +14,41 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         .project-hero {
-            padding: 8rem 0 5rem;
-            background: linear-gradient(rgba(10, 10, 12, 0.7), rgba(10, 10, 12, 0.7)), url('citto-portfolio.png');
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
+            position: relative;
+            padding: 10rem 0 5rem;
+            /* Space from top */
+            min-height: 90vh;
+            display: flex;
+            align-items: flex-start;
+            /* Top alignment */
+            text-align: left;
+            /* Ensure text starts from the left */
+            overflow: hidden;
             border-bottom: 1px solid var(--glass-border);
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%) scale(0.75);
+            /* User manual scale preference */
+            z-index: -2;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(10, 10, 12, 0.5), rgba(10, 10, 12, 0.8));
+            z-index: -1;
         }
 
         .project-details {
@@ -66,14 +95,20 @@
 
     <main>
         <section class="project-hero">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="citto.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
             <div class="container">
                 <a href="../index.html#projects" class="back-link"><i data-lucide="arrow-left"></i> Back to Projects</a>
-                <h1 class="gradient-text">Citto</h1>
-                <p class="hero-subtitle">A fast-paced action-adventure game with a unique art style.</p>
+                <h1 class="gradient-text">CiTTO</h1>
+                <p class="hero-subtitle">The game tells the story of Citto, who struggles to survive
+                    in nature and slowly reconnects <br>with the environment by helping the very animals he once felt
+                    distant from.<br>
+                    It’s a journey of survival, reconciliation, and growth.</p>
                 <div class="project-meta">
-                    <span><strong>Role:</strong> Game Designer & Developer</span>
-                    <span><strong>Platform:</strong> Mobile / PC</span>
-                    <span><strong>Year:</strong> 2026</span>
+                    <span><strong>Platform:</strong> IOS / Android</span>
+                    <span><strong>Year:</strong> 2023</span>
                 </div>
             </div>
         </section>
@@ -82,10 +117,11 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-text">
-                        <h2>Overview</h2>
-                        <p>Citto is an upcoming action-adventure game that combines fluid movement mechanics with a
-                            stunning, hand-crafted visual style. Players navigate through challenging environments,
-                            overcoming obstacles and discovering the secrets of a vibrant world.</p>
+                        <h2>How it began</h2>
+                        <p>The game began when I came across a beautiful drawing made by a very talented child
+                            — a boy standing in the forest with a phone in his hand,
+                            surrounded by animals looking at him with anger. That image stayed with me,
+                            and I decided to bring it to life.</p>
                         <h3>Key Features</h3>
                         <ul>
                             <li>Dynamic movement and platforming systems.</li>
