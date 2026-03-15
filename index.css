@@ -654,8 +654,7 @@ footer {
 
 /* Project Story Section */
 .story-section {
-    padding: 6rem 0 4rem;
-    border-bottom: 1px solid var(--glass-border);
+    padding: 2rem 0 4rem;
 }
 
 .story-content {
@@ -673,14 +672,31 @@ footer {
 }
 
 /* Technical Details Layout */
-.details-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 5rem;
-    align-items: start;
+.feature-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
 }
 
-.details-left h2 {
+.feature-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.feature-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-image {
+    flex: 1;
+}
+
+.feature-text h2 {
     margin-bottom: 1.5rem;
     color: var(--primary);
 }

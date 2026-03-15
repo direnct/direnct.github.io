@@ -15,24 +15,25 @@
     <style>
         .project-hero {
             position: relative;
-            padding: 12rem 0 8rem;
-            min-height: 80vh;
+            padding: 7rem 0 8rem;
+            min-height: 100vh;
             border-bottom: 1px solid var(--glass-border);
             overflow: hidden;
         }
 
         .hero-video {
             position: absolute;
-            top: 50%;
+            top: 0%;
             left: 50%;
             min-width: 100%;
             min-height: 100%;
             width: auto;
             height: auto;
-            transform: translate(-50%, -50%) scale(0.75);
+            transform: translate(-50%, -10%) scale(0.70);
             /* User manual scale preference */
             z-index: -2;
             object-fit: cover;
+            object-position: center top;
         }
 
         .hero-overlay {
@@ -41,7 +42,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(rgba(10, 10, 12, 0.5), rgba(10, 10, 12, 0.8));
+            background: linear-gradient(rgba(10, 10, 12, 0.5), rgba(10, 10, 12, 0.5));
             z-index: -1;
         }
 
@@ -71,7 +72,7 @@
 <body>
     <header class="navbar scrolled">
         <div class="container">
-            <a href="../index.html" class="logo">DT<span>.</span></a>
+            <a href="../index.html" class="logo">dt<span>.</span></a>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -94,12 +95,15 @@
             </video>
             <div class="hero-overlay"></div>
             <div class="container">
-                <a href="../index.html#projects" class="back-link"><i data-lucide="arrow-left"></i> Back to Projects</a>
+                <!-- <a href="../index.html#projects" class="back-link"><i data-lucide="arrow-left"></i> Back to Projects</a> -->
                 <h1 class="gradient-text">CiTTO</h1>
-                <p class="hero-subtitle">The game tells the story of Citto, who struggles to survive
-                    in nature and slowly reconnects <br>with the environment by helping the very animals he once felt
-                    distant from.<br>
-                    It’s a journey of survival, reconciliation, and growth.</p>
+                <div class="story-content">
+                    <p>The game tells the story of Citto, who struggles to survive
+                        in nature and slowly reconnects <br>with the environment by helping the very animals he once
+                        felt
+                        distant from.<br>
+                        It’s a journey of survival, reconciliation, and growth.</p>
+                </div>
                 <div class="project-meta">
                     <span><strong>Platform:</strong> IOS / Android</span>
                     <span><strong>Year:</strong> 2023</span>
@@ -109,65 +113,94 @@
 
         <section class="story-section">
             <div class="container">
-                <div class="story-content">
-                    <h2>How it began</h2>
-                    <p>The game began when I came across a beautiful drawing made by a very talented child — a boy
-                        standing in the forest with a phone in his hand, surrounded by animals looking at him with
-                        anger. That image stayed with me, and I decided to bring it to life.</p>
-                </div>
+                <h2>How it began</h2>
+                <p>The game began when I came across a beautiful drawing made by a very talented child — a boy
+                    standing in the forest with a phone in his hand, surrounded by animals looking at him with
+                    anger. That image stayed with me, and I decided to bring it to life.</p>
             </div>
         </section>
 
         <section class="project-details">
             <div class="container">
-                <div class="details-grid">
-                    <div class="details-left">
-                        <h2>My Role & Development Cycle</h2>
-                        <p>While developing Citto, I was responsible for the full development process — from designing
-                            levels and balancing difficulty to implementing scoring systems, rewards, leaderboards, UI,
-                            audio, and character animations.</p>
-                        <p>I managed the complete lifecycle of the product, ensuring every detail aligned with the
-                            original vision while maintaining high technical standards. I integrated visual assets into
-                            Unity, implemented advertising and analytics solutions, and managed the publishing process
-                            for both the App Store and Google Play. The entire gameplay architecture and technical
-                            implementation were built in C#.</p>
-
-                        <h3>Technical Highlights</h3>
-                        <ul class="project-list">
-                            <li>Game design & progression systems</li>
-                            <li>Level design & Difficulty balancing</li>
-                            <li>Scoring & reward systems</li>
-                            <li>Leaderboards integration</li>
-                            <li>UI & Audio implementation</li>
-                            <li>Character design & animation integration</li>
-                            <li>Asset pipeline (Photoshop → Unity)</li>
-                            <li>Ad & Analytics SDK integration</li>
-                            <li>Store deployment (App Store & Play Store)</li>
-                            <li>Full C# implementation</li>
-                        </ul>
+                <div class="feature-rows">
+                    <!-- Row 1: Text Left, Image Right -->
+                    <div class="feature-row">
+                        <div class="feature-text">
+                            <h2>Development</h2>
+                            <p>From designing levels and balancing difficulty to implementing scoring systems,
+                                rewards, leaderboards, UI, audio, and character animations.
+                                I mostly created everything and integrated into Unity,
+                                also advertising and analytics solutions, and managed the publishing process for both
+                                the
+                                App Store and Google Play.
+                            </p>
+                        </div>
+                        <div class="feature-image">
+                            <div class="uniform-img">
+                                <img src="../assets/images/citto/lvl_2.jpg" alt="Citto Gameplay - Level 2">
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="details-right">
-                        <div class="uniform-img mobile-shot">
-                            <img src="../assets/images/citto/lvl_1_mobile.jpg" alt="Citto Gameplay - Concept">
+                    <!-- Row 2: Text Left, Image Right -->
+                    <div class="feature-row reverse">
+                        <div class="feature-text">
+                            <h2>Core Gameplay</h2>
+                            <p>Here you can describe the primary game loop, mechanics, and what makes the gameplay fun
+                                and engaging. Talk about how the character interacts with the world.</p>
                         </div>
-                        <div class="uniform-img">
-                            <img src="../assets/images/citto/lvl_2.jpg" alt="Citto Gameplay - Level 2">
+                        <div class="feature-image">
+                            <div class="uniform-img">
+                                <img src="../assets/images/citto/lvl_3.jpg" alt="Citto Gameplay - Level 3">
+                            </div>
                         </div>
-                        <div class="uniform-img">
-                            <img src="../assets/images/citto/lvl_3.jpg" alt="Citto Gameplay - Level 3">
+                    </div>
+
+                    <!-- Row 3: Text Left, Image Right -->
+                    <div class="feature-row">
+                        <div class="feature-text">
+                            <h2>Level Design & Progression</h2>
+                            <p>Explain how levels scale in difficulty, what new challenges players face as they
+                                progress, and how the environment evolves throughout the game.</p>
                         </div>
-                        <div class="uniform-img">
-                            <img src="../assets/images/citto/lvl_6.jpg" alt="Citto Gameplay - Level 6">
+                        <div class="feature-image">
+                            <div class="uniform-img">
+                                <img src="../assets/images/citto/lvl_6.jpg" alt="Citto Gameplay - Level 6">
+                            </div>
                         </div>
-                        <div class="uniform-img">
-                            <img src="../assets/images/citto/lvl_8.jpg" alt="Citto Gameplay - Level 8">
+                    </div>
+
+                    <!-- Row 4: Text Left, Image Right -->
+                    <div class="feature-row reverse">
+                        <div class="feature-text">
+                            <h2>Art & Atmosphere</h2>
+                            <p>Detail the artistic direction, inspiration behind the visuals, and how the art style
+                                supports the emotional narrative and tone of the experience.</p>
                         </div>
-                        <div class="uniform-img mobile-shot">
-                            <img src="../assets/images/citto/lvl_8_mobile.jpg" alt="Citto Gameplay - Final">
+                        <div class="feature-image">
+                            <div class="uniform-img">
+                                <img src="../assets/images/citto/lvl_8.jpg" alt="Citto Gameplay - Level 8">
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="technical-highlights-section" style="margin-top: 5rem;">
+                    <h3>Technical Highlights</h3>
+                    <ul class="project-list">
+                        <li>Game design & progression systems</li>
+                        <li>Level design & Difficulty balancing</li>
+                        <li>Scoring & reward systems</li>
+                        <li>Leaderboards integration</li>
+                        <li>UI & Audio implementation</li>
+                        <li>Character design & animation integration</li>
+                        <li>Asset pipeline (Photoshop → Unity)</li>
+                        <li>Ad & Analytics SDK integration</li>
+                        <li>Store deployment (App Store & Play Store)</li>
+                        <li>Full C# implementation</li>
+                    </ul>
+                </div>
+            </div>
             </div>
         </section>
     </main>
