@@ -654,11 +654,13 @@ footer {
 
 /* Project Story Section */
 .story-section {
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 0rem;
 }
 
 .story-content {
     max-width: 900px;
+    align-items: center;    
+    justify-content: center;
 }
 
 .story-content h2 {
@@ -690,6 +692,7 @@ footer {
 
 .feature-text {
     flex: 1;
+    font-size: 1.2rem;
 }
 
 .feature-image {
